@@ -1,7 +1,12 @@
+import React from 'react'
+import Pic from "./components/Pic"
+import Navbar from "./components/Navbar"
+
 function App() {
   return (
     <div>
-      Hey Sid
+      <Navbar />
+      <Pic />
     </div>
   );
 }

@@ -7,8 +7,7 @@ const Pic = () => (
   <div>
     <Container>
       <Image src={Sid} size = 'big' centered rounded  />
-     
-    </Container>
+     </Container>
   </div>
 );
 

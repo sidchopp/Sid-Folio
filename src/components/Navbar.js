@@ -5,8 +5,6 @@ import { Menu, Segment, Header, Image } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css'
 import Sid from "../images/sid.jpg";
 
-
-
 // functional component
 function Navbar(props) {
   const [activeItem, setActiveItem] = useState('home')

@@ -6,7 +6,7 @@ import '../stylesheets/style.css'
 const Footer = () => {
   return (
     <div  >
-      <Segment inverted vertical style={{ padding: '4em 0em' }}>
+      <Segment inverted vertical style={{ padding: '5em 0em' }}>
         <Container textAlign='center'>
           <Grid divided inverted stackable>
             <Grid.Column width={5}>
@@ -15,7 +15,6 @@ const Footer = () => {
                 <List.Item as='a'>Home</List.Item>
                 <List.Item as='a'>Contact</List.Item>
                 <List.Item as='a'>My Resume</List.Item>
-                <List.Item as='a'>Link Four</List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={10}>
@@ -38,7 +37,7 @@ const Footer = () => {
               Privacy Policy
           </List.Item>
           </List>
-          <List  class="social-icons icon-rounded  list-unstyled list-inline">
+          <List   class="social-icons icon-circle icon-zoom list-unstyled list-inline">
             <List.Item as='a' href='#' class="fa fa-facebook-square"></List.Item>
             <List.Item as='a' href='#' class="fa fa-linkedin-square"> </List.Item>
             <List.Item as='a' href='#' class="fa fa-github"> </List.Item>

@@ -8,12 +8,12 @@ import {
   Header,
   Icon,
 } from "semantic-ui-react";
-import Rainbow from "../images/rainbow.jpg";
-import BasicContainer from "./BasicContainer";
+import Face from "../images/face.jpg";
+import Page from "./Page";
 
 const Home = () => {
   return (
-    <BasicContainer>
+    <Page title ="Welcome">
       <Divider />
       <Header as="h2">
         <Icon name="home" />
@@ -23,7 +23,7 @@ const Home = () => {
         <Grid columns={2} relaxed="very">
           <Grid.Column>
             <p>
-              <Image src={Rainbow} size="large" />
+              <Image src={Face} size="huge" />
             </p>
           </Grid.Column>
           <Grid.Column>
@@ -32,7 +32,7 @@ const Home = () => {
         </Grid>
       </Segment>
       <Divider />
-    </BasicContainer>
+    </Page>
   );
 };
 

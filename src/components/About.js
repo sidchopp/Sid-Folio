@@ -1,5 +1,5 @@
 import React from "react";
-import BasicContainer from "./BasicContainer";
+import Page from "./Page";
 import {
   Container,
   Divider,
@@ -12,9 +12,9 @@ import {
 
 import Rainbow from "../images/rainbow.jpg";
 
-const About = () => {
+function About() {
   return (
-    <BasicContainer>
+    <Page title ="About Me">
       <Divider />
       <Header as="h2">
         <Icon name="spy" />
@@ -24,7 +24,7 @@ const About = () => {
         <Grid columns={2} relaxed="very">
           <Grid.Column>
             <p>
-              <Image src={Rainbow} size="large" />
+              <Image src={Rainbow} size="huge" />
             </p>
           </Grid.Column>
           <Grid.Column>
@@ -33,7 +33,7 @@ const About = () => {
         </Grid>
       </Segment>
       <Divider />
-    </BasicContainer>
+    </Page>
   );
 };
 

@@ -1,5 +1,6 @@
 import React from "react";
-import { Segment, Container, Grid, List, Header, Divider, Image } from "semantic-ui-react";
+import { Link } from 'react-router-dom'
+import { Segment, Container, Grid, List, Header, Divider, Image, Icon,  } from "semantic-ui-react";
 import Sid from "../images/sid.jpg";
 import '../stylesheets/style.css'
 
@@ -21,14 +22,17 @@ const Footer = () => {
               <Header inverted as='h4' content="My Life's Mantra" />
               <h3>
                 <i>"Stop not till the goal is reached"</i>
-            </h3>
+              </h3>
             </Grid.Column>
           </Grid>
           <Divider inverted section />
           <Image centered size='mini' src={Sid} circular />
           <List horizontal inverted divided link size='small'>
             <List.Item as='a' href='#'>
-              Contact Me
+              Site Map
+          </List.Item>
+            <List.Item as='a' href='#'>
+              Contact Us
           </List.Item>
             <List.Item as='a' href='#'>
               Terms and Conditions
@@ -37,12 +41,13 @@ const Footer = () => {
               Privacy Policy
           </List.Item>
           </List>
-          <List   class="social-icons icon-circle icon-zoom list-unstyled list-inline">
-            <List.Item as='a' href='#' class="fa fa-facebook-square"></List.Item>
-            <List.Item as='a' href='#' class="fa fa-linkedin-square"> </List.Item>
-            <List.Item as='a' href='#' class="fa fa-github"> </List.Item>
-            <List.Item as='a' href='#' class="fa fa-twitter"> </List.Item>
-          </List>
+          <div >
+        
+          <a href ="#" ><Icon  bordered inverted color='black' name='linkedin' size='large'   /></a> 
+          <a href ="#" > <Icon bordered inverted color='black' name='facebook' size='large'  /></a>
+          <a href ="#" > <Icon bordered inverted twitter color='black' name='github' size='large'  /></a>
+          <a href ="#" > <Icon bordered inverted color='black' name='twitter' size='large'  /></a>
+          </div>
         </Container>
       </Segment>
     </div>

@@ -7,33 +7,45 @@ import Sid from "../images/sid.jpg";
 
 // functional component
 function Navbar(props) {
-  const [activeItem, setActiveItem] = useState('home')
-  const handleItemClick = (e, { name }) => { setActiveItem({ activeItem: name }) }
+  // the initial value is the 'home' page when navbar renders
+  const [activeItem, setActiveItem] = useState("home");
+  const handleItemClick = (e, { name }) => {
+    setActiveItem({ activeItem: name });
+  };
   return (
     <div>
       <Segment inverted>
         <Menu inverted secondary stackable>
           <Menu.Item>
-            <Header as='h2'>
+            <Header as="h2">
               <Image circular src={Sid} />
             </Header>
           </Menu.Item>
-          <Menu.Item as={Link} to=''
-            name='home'
-            active={activeItem === 'home'}
-            onClick={handleItemClick} />
-          <Menu.Item as={Link} to='about'
-            name='about'
-            active={activeItem === 'about'}
-            onClick={handleItemClick} />
-          <Menu.Item as={Link} to='contact'
-            name='contact'
-            active={activeItem === 'contact'}
-            onClick={handleItemClick} />
+          <Menu.Item
+            as={Link}
+            to=""
+            name="home"
+            active={activeItem === "home"}
+            onClick={handleItemClick}
+          />
+          <Menu.Item
+            as={Link}
+            to="about"
+            name="about"
+            active={activeItem === "about"}
+            onClick={handleItemClick}
+          />
+          <Menu.Item
+            as={Link}
+            to="contact"
+            name="contact"
+            active={activeItem === "contact"}
+            onClick={handleItemClick}
+          />
         </Menu>
       </Segment>
     </div>
-  )
+  );
 }
 export default Navbar;
 

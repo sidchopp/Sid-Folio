@@ -14,10 +14,10 @@ import Rainbow from "../images/rainbow.jpg";
 
 function About() {
   return (
-    <Page title ="About Me">
+    <Page title="About Me">
       <Divider />
       <Header as="h2">
-        <Icon name="spy" />
+        <Icon name="graduation cap" />
         <Header.Content>About Me..</Header.Content>
       </Header>
       <Segment>

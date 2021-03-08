@@ -18,6 +18,7 @@ function App() {
         <Route path="/" exact> <Home /> </Route>
         <Route path="/about" exact> <About /></Route>
         <Route path="/contact" exact><Contact /> </Route>
+
       </Switch>
       <Footer />
     </BrowserRouter>
@@ -25,3 +26,4 @@ function App() {
 }
 
 export default App;
+

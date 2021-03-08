@@ -23,10 +23,10 @@ const genderOptions = [
 
 function FormExampleFieldControlId() {
   return (
-    <Page title ="Contact Me">
+    <Page title="Contact Me">
       <Divider />
       <Header as="h2">
-        <Icon name="user" />
+        <Icon name="envelope" />
         <Header.Content>Please fill the Contact form</Header.Content>
       </Header>
       <Segment>
@@ -75,7 +75,7 @@ function FormExampleFieldControlId() {
               label="Please Press Confirm"
             /> */}
               <Button inverted color="green">
-                Send 
+                Send
               </Button>
             </Form>
           </Grid.Column>

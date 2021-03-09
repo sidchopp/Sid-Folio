@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   Form,
   Input,
@@ -15,13 +16,10 @@ import {
 import Page from "./Page";
 import Face from "../images/face.jpg";
 
-const genderOptions = [
-  { key: "m", text: "Male", value: "male" },
-  { key: "f", text: "Female", value: "female" },
-  { key: "o", text: "Other", value: "other" },
-];
 
-function FormExampleFieldControlId() {
+
+function Contact() {
+
   return (
     <Page title="Contact Me">
       <Divider />
@@ -62,19 +60,13 @@ function FormExampleFieldControlId() {
                 id="form-input-control-error-email"
                 control={Input}
                 label="Email"
-                placeholder="joe@schmoe.com"
+                placeholder="you@example.com"
                 error={{
                   content: "Please enter a valid email address",
                   pointing: "below",
                 }}
               />
-              {/* <Form.Field
-              id="form-button-control-public"
-              control={Button }
-              content="Confirm"
-              label="Please Press Confirm"
-            /> */}
-              <Button inverted color="green">
+              <Button inverted color="green" >
                 Send
               </Button>
             </Form>
@@ -87,4 +79,4 @@ function FormExampleFieldControlId() {
   );
 }
 
-export default FormExampleFieldControlId;
+export default Contact;

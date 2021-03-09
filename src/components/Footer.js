@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom'
 import { Segment, Container, Grid, List, Header, Divider, Image, Icon, } from "semantic-ui-react";
 import Sid from "../images/sid.jpg";
-import '../stylesheets/style.css'
+
 
 const Footer = () => {
   return (
@@ -13,9 +13,10 @@ const Footer = () => {
             <Grid.Column width={5}>
               <Header inverted as="h4" content="Useful Links" />
               <List link inverted>
-                <List.Item as="a">Home</List.Item>
-                <List.Item as="a">Contact</List.Item>
+                <List.Item as={Link} to="">Home</List.Item>
+                <List.Item as={Link} to="contact">Contact</List.Item>
                 <List.Item as="a">My Resume</List.Item>
+                <List.Item as={Link} to="sign-in">Sign In</List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={10}>
@@ -82,6 +83,13 @@ const Footer = () => {
                 size="large"
               />
             </a>
+            <p >
+              Copyright &copy; 2021{" "}
+              <a href="/" className="text-muted">
+                Sid-Folio
+          </a>
+        . All rights reserved.
+      </p>
           </div>
         </Container>
       </Segment>

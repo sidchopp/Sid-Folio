@@ -1,6 +1,6 @@
 import React from "react";
+
 import {
-  Container,
   Divider,
   Segment,
   Grid,
@@ -13,7 +13,7 @@ import Page from "./Page";
 
 const Home = () => {
   return (
-    <Page title ="Welcome">
+    <Page title="Welcome">
       <Divider />
       <Header as="h2">
         <Icon name="home" />
@@ -32,6 +32,7 @@ const Home = () => {
         </Grid>
       </Segment>
       <Divider />
+
     </Page>
   );
 };

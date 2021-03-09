@@ -16,7 +16,7 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Switch>
-        <Route path="/" exact> <Home /> </Route>
+        <Route path="/" exact> <Home /> </Route> 
         <Route path="/about" exact> <About /></Route>
         <Route path="/contact" exact><Contact /> </Route>
         <Route path="/sign-in" exact><SignIn /> </Route>

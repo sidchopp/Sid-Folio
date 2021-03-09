@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom'
-import { Segment, Container, Grid, List, Header, Divider, Image, Icon, } from "semantic-ui-react";
+import { Segment, Container, Grid, List, Header, Divider, Image, Button } from "semantic-ui-react";
 import Sid from "../images/sid.jpg";
 
 
@@ -43,47 +43,13 @@ const Footer = () => {
             </List.Item>
           </List>
           <div>
-            <a href="https://github.com/sidchopp" target="_blank" >
-              <Icon
-                bordered
-                inverted
-                twitter
-                color="black"
-                name="github"
-                size="large"
-              />
-            </a>
-            <a href="https://www.linkedin.com/in/sidchopp/" target="_blank" >
-              <Icon
-                bordered
-                inverted
-                color="black"
-                name="linkedin"
-                size="large"
-              />
-            </a>
-            <a href="https://www.facebook.com/siddchopp/" target="_blank">
-
-              <Icon
-                bordered
-                inverted
-                color="black"
-                name="facebook"
-                size="large"
-              />
-            </a>
-
-            <a href="#">
-
-              <Icon
-                bordered
-                inverted
-                color="black"
-                name="twitter"
-                size="large"
-              />
-            </a>
-            <p >
+            <Button circular color='black' icon='github' bordered inverted as='a' href="https://github.com/sidchopp" target="_blank" />
+            <Button circular color='black' icon='linkedin' bordered inverted as='a' href="https://www.linkedin.com/in/sidchopp/" target="_blank" />
+            <Button circular color='black' icon='facebook' bordered inverted as='a' href="https://www.facebook.com/siddchopp/" target="_blank" />
+            <Button circular color='black' icon='twitter' bordered inverted as='a' href="#" target="_blank" />
+          </div>
+          <div>
+            <p style={{ marginTop: '1em' }} >
               Copyright &copy; 2021{" "}
               <a href="/" className="text-muted">
                 Sid-Folio
